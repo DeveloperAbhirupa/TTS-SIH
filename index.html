@@ -3,11 +3,13 @@
   <head>
     <meta charset="UTF-8">
     <title>VANI</title>
+    <script src="public/scripts/jquery.js"></script>
     <link rel="stylesheet" href="style.css">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 
     <!-- Materializa -->
@@ -33,7 +35,7 @@
       <div class="i1 cool"><img  src="assests/icons-8-language-90.png" id="icon1"></div>
       <div class="i1 cool"><img  src="assests/icons-8-language-90.png" id="icon2"></div>
       <div class="i1 cool"><img  src="assests/icons-8-voice-90.png" id="icon3"></div>
-      <div class="i1 cool"><img  src="assests/icons-8-language-90.png" id="icon4"></div>
+      <div class="i1 cool"><img  src="assests/icons-8-language-90.png" onclick="defLang()" id="icon4"></div>
 
 
     </div>
@@ -45,16 +47,20 @@
       </ul>
     </div>
 
-    <!-- Compiled and minified JavaScript -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <!-- <script src="public/scripts/jquery.js"></script> -->
     <script>
       // You can also require other files to run in this process
-      $("#languages").hide();
-      $("#icon4").click(function (){
-        $('#languages').fadeIn();
-        consooe.log("Language clicked");
-      });
+      function defLang(){
+        console.log("Working");
+        $("#languages").fadeIn();
+      }
+      document.getElementById("languages").style.display= " none"
+
+
+
+
+
+
       require('./renderer.js')
     </script>
   </body>
