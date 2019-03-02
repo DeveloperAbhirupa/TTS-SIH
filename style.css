@@ -1,0 +1,114 @@
+body{
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.circle{
+  height: 240vh;
+  width:240vh;
+  position:absolute;
+  margin-top: -90vh;
+  margin-left: -85vh;
+}
+.botStatic{
+  position: absolute;
+  height:25vh!important;
+  margin-left: 23vh;
+  margin-top: 16vh;
+}
+.VANI {
+  position: relative;
+  z-index: -1;
+  margin-top: 20vh;
+  margin-right: 30vh !important;
+  text-align: right !important;
+  background-image: linear-gradient(to top, #008fc4, #00537e), linear-gradient(to bottom, #fefefe, #fefefe);
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 200px;
+  font-weight: 300;
+  /* margin-right: 10px !important; */
+  color: #fefefe;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+.icon{
+  margin-right: 45vh !important;
+  text-align: right !important;
+  float: right!important;
+}
+#icon1{
+  position: relative;
+  margin-top: 0vh;
+  margin-right: -16vh;
+}
+#icon2{
+  position: relative;
+  margin-right: -6vh;
+  margin-top: -12vh;
+
+}
+#icon3{
+  position: relative;
+  margin-right: 4vh;
+  margin-top: -17vh;
+}
+#icon4{
+  position: relative;
+  margin-right: 14vh;
+  margin-top: -22vh;
+}
+.i1:hover{
+  cursor: pointer;
+}
+#icon1,#icon2, #icon3, #icon4{
+  padding: 2vh;
+  padding-right: 2vh;
+  height: 10vh;
+  width: auto;
+}
+
+input[type=text] {
+  z-index: 100;
+  background-color: #FFFFFF !important;
+  background: url(assests/icons-8-microphone-90.png) right no-repeat scroll 7px 7px;
+  padding-right:30px;
+  color: white;
+  opacity: 0.8;
+}
+
+#text{
+  border-radius: 40px;
+  width:70vh;
+  margin-right: 16vh !important;
+  /* background-color: : #FFFFFF !important; */
+  border-width: 0.1vh;
+  border-color: black;
+  padding:2.5vh;
+}
+
+#languages {
+  font-family: 'Montserrat', sans-serif;
+  display:inline-block;
+  padding:5px 6px 8px 6px;
+  border-radius: 6px;
+  float: right;
+  margin-right: 40px;
+  color:black;
+  background-color:white;
+  position: relative;
+}
+
+#languages:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-bottom-color:#D0D3D5;;
+  border-top: 0;
+  margin-left: -20px;
+   margin-top: -20px;
+}
