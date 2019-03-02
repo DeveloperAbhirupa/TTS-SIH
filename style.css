@@ -91,12 +91,19 @@ input[type=text] {
   font-family: 'Montserrat', sans-serif;
   display:inline-block;
   padding:5px 6px 8px 6px;
-  border-radius: 6px;
   float: right;
   margin-right: 40px;
   color:black;
   background-color:white;
   position: relative;
+  margin-right: 39vh;
+  margin-top: -5vh;
+
+
+}
+.lang:hover{
+  background-color: blue;
+  cursor: pointer;
 }
 
 #languages:after {
