@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
@@ -54,9 +55,45 @@
       </ul>
     </div>
 
+    <div id="speed">
+      <ul class="list-group">
+        <li class="sp list-group-item">0.5x</li>
+        <li class="sp list-group-item">1x (Default)</li>
+        <li class="sp list-group-item">1.5x</li>
+        <li class="sp list-group-item">2x</li>
+      </ul>
+    </div>
+
+
     <script src="public/scripts/jquery.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script>
+      document.getElementById("languages").style.display= " none";
+      document.getElementById("gender").style.display= " none";
+      document.getElementById("speed").style.display= " none";
       // You can also require other files to run in this process
+
+
+      // $( function() {
+      //   var select = $( "#minbeds" );
+      //   var slider = $( "<div id='slider'></div>" ).insertAfter( select ).slider({
+      //     min: 1,
+      //     max: 6,
+      //     range: "min",
+      //     value: select[ 0 ].selectedIndex + 1,
+      //     slide: function( event, ui ) {
+      //       select[ 0 ].selectedIndex = ui.value - 1;
+      //     }
+      //   });
+      //   $( "#minbeds" ).on( "change", function() {
+      //     slider.slider( "value", this.selectedIndex + 1 );
+      //   });
+      // } );
+
+
+
+
+
       $(".lang").click(function(){
         console.log("closing Popup");
         $("#languages").fadeOut();
@@ -67,22 +104,21 @@
         $("#gender").fadeOut();
 
       })
+      $(".sp").click(function(){
+        console.log("closing Popup");
+        $("#speed").fadeOut();
+
+      })
       function defGender(){
         $("#gender").fadeIn();
       }
       function defSpeed(){
-
+        $("#speed").fadeIn();
       }
       function defLang(){
         console.log("Working");
         $("#languages").fadeIn();
       }
-      document.getElementById("languages").style.display= " none"
-      document.getElementById("gender").style.display= " none"
-
-
-
-
 
 
       require('./renderer.js')
