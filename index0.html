@@ -32,8 +32,8 @@
     </form>
     <!-- <div class="container cool">I am a black sheep</div> -->
     <div  class="icon container-fluid" align="right">
-      <div class="i1 cool"><img  src="assests/icons-8-speed-90.jpg" onclick="defSpeed()" id="icon1"></div>
-      <div class="i1 cool"><img  src="assests/icons-8-language-90-copy.jpg" onclick="defGender()"  id="icon2"></div>
+      <div class="i1 cool"><img  src="assests/icons-8-voice-90.png" onclick="defSpeed()" id="icon1"></div>
+      <div class="i1 cool"><img  src="assests/icons-8-language-90.png"  id="icon2"></div>
       <div class="i1 cool"><img  src="assests/icons-8-language-90.png" onclick="defLang()"id="icon3"></div>
       <div class="i1 cool"><img  src="assests/icons-8-voice-90.png" id="icon4"></div>
 
@@ -47,13 +47,6 @@
       </ul>
     </div>
 
-    <div id="gender">
-      <ul class="list-group">
-        <li class="gen list-group-item">Female</li>
-        <li class="gen list-group-item">Male</li>
-      </ul>
-    </div>
-
     <script src="public/scripts/jquery.js"></script>
     <script>
       // You can also require other files to run in this process
@@ -62,23 +55,14 @@
         $("#languages").fadeOut();
 
       })
-      $(".gen").click(function(){
-        console.log("closing Popup");
-        $("#gender").fadeOut();
-
-      })
-      function defGender(){
-        $("#gender").fadeIn();
-      }
       function defSpeed(){
-
+        
       }
       function defLang(){
         console.log("Working");
         $("#languages").fadeIn();
       }
       document.getElementById("languages").style.display= " none"
-      document.getElementById("gender").style.display= " none"
 
 
 
